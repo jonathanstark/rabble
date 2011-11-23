@@ -4,12 +4,13 @@ var socket = io.connect('http://server.rabble.io');
 var rabble = {
 
     initChat: function() {
-        rabble.guiRender();    
+        rabble.guiRender();
+        rabble.user='';  
     },
 
     sendHandshake: function() {
         socket.emit('handshake', {
-            user:'',
+            user:rabble.user,
             url:window.location.href,
             browser:$.browser,
             resolution:screen.width.toString() + 'x' + screen.height.toString(),
