@@ -52,7 +52,7 @@ rabble.guiRender = function() {
             '</form>' +
             '<div id="Rabble-userCount">' +
             '    <span>0</span> people in the chat' +
-            '    <a href="http://rabblejs.com" target="_blank">powered by <em>Rabble</em></a>' +
+            '    <a href="http://rabble.io" target="_blank">powered by <em>Rabble</em></a>' +
             '</div>'
         );
         rabbleUI.append(chatToggle).append(chatGUI);
